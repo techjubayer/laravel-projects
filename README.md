@@ -1,6 +1,6 @@
 ## Pre Requirments-------------
-Download XAMPP [Download](https://www.apachefriends.org/)
-Download PHP Composer [Download](https://getcomposer.org/)
+###Download XAMPP [Download](https://www.apachefriends.org/)
+###Download PHP Composer [Download](https://getcomposer.org/)
 
 // Set env for MySql, PHP and Composer
 // Check all setup tools:
