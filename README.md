@@ -1,8 +1,12 @@
 ```
 ~$ laravel new passport-auth
 ~$ composer require laravel/passport
-~$ php artisan migrate //To create tables in connected database
+
+~$ php artisan migrate
+//To create tables in connected database
+
 ~$ php artisan passport:install
+This command will create the encryption keys needed to generate secure access tokens. In addition, the command will create "personal access" and "password grant" clients which will be used to generate access tokens. This keys we can find in 'oauth_clients' table in the database.
 ```
 
 ## Passport Configuration app/User.php
