@@ -43,7 +43,7 @@ class User extends Authenticatable
 ],
 ```
 
-## Deploying Passport
+## Deploying Passport (Optional)
 
 ```
 ~$ php artisan passport:keys
@@ -60,6 +60,7 @@ public function boot()
 ## Token Lifetimes
 
 ```
+use Laravel\Passport\Passport;
 /**
  * Register any authentication / authorization services.
  *
