@@ -79,12 +79,12 @@ public function boot()
 ```
 // In /routes/api.php
 Route::group(['middleware' => 'auth:api'], function(){
-    Route::post('details', 'API\UserController@details');
+    Route::post('details', 'API\UserController@getUserDetails');
 });
 
 
 // In /app/Http/Controllers/UserControler.php
-public function details()
+public function getUserDetails()
     {
         $user = Auth::user();
         if($user){
