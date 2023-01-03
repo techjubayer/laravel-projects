@@ -43,11 +43,8 @@ class User extends Authenticatable
 
 ```
 ~$ php artisan passport:keys
-```
 
-# AuthServiceProvider Configuration \app\Providers\AuthServiceProvider.php
-
-```
+// AuthServiceProvider Configuration \app\Providers\AuthServiceProvider.php
 public function boot()
 {
     $this->registerPolicies();
