@@ -80,11 +80,21 @@ public function boot()
 
 ```
 // In /routes/api.php
-Route::group(['middleware' => 'auth:api'], function(){
-    Route::post('details', 'API\UserController@getUserDetails');
+<?php
+
+use App\Http\Controllers\UserController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+Route::controller(UserController::class)->group(function () {
+    Route::post("signup", 'newRegister');
+    Route::post("login", 'userLogin');
+    Route::post("user", 'getUserDetails');
 });
 
+```
 
+```
 // In /app/Http/Controllers/UserControler.php
 <?php
 
