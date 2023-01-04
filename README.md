@@ -1,4 +1,4 @@
-## Creat laravel app
+## Create laravel app
 
 ```
 ~$ laravel new passport-auth
