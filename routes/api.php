@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(UserController::class)->group(function () {
     Route::post("signup", 'newRegister');
+    Route::post("login", 'userLogin');
+    Route::post("user", 'getUserDetails');
 });
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
